@@ -50,6 +50,7 @@ button{
     font-weight: bold;
     border-radius: 5px;
     color: #465c49;
+    margin-bottom: 8px;
 }
 
 button:hover{
@@ -59,4 +60,14 @@ button:hover{
 
 p{
     height: 2rem;
+}
+
+@media(max-width: 500px) {
+    #logo{
+        width: 240px;
+    }
+    #data-nascimento{
+        height: 30px;
+        font-size: 20px;
+    }
 }

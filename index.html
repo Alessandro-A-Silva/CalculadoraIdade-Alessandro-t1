@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="src/script.js"></script>
-  </head>
-  <body>
-    <section>
-      <h1>Calculadora de idade</h1>
-      <form action="">
-        <label for="data nascimento">Informe sua data de nascimento</label>
-        <input type="date" name="data nascimento" id="data-nascimento" />
-        <button onclick="CalcularIdade()">Calcular</button>
-      </form>
-      <p id="resultado"></p>
-      <div>
-        <img src="assets/img/logo-projeto.png" alt="logo" id="logo" />
-      </div>
-    </section>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de idade</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="src/script.js"></script>
+</head>
+
+<body>
+  <section>
+    <h1>Calculadora de idade</h1>
+    <form action="">
+      <label for="data nascimento">Informe sua data de nascimento</label>
+      <input type="date" name="data nascimento" id="data-nascimento" min="1900-01-01" />
+      <button type="button" onclick="CalcularIdade()">Calcular</button>
+    </form>
+    <p id="resultado"></p>
+    <div>
+      <img src="assets/img/logo-projeto.png" alt="logo" id="logo" />
+    </div>
+  </section>
+</body>
+
 </html>
